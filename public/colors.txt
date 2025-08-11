@@ -1,0 +1,6 @@
+Role	Color
+Background	#78C841
+Cards	#FFFFFF (with yellow border or shadow)
+Primary Btn	#B4E50D
+Hover	#FF9B2F
+Text	#2C2C2C (normal), #FB4141 (alerts)

@@ -1,0 +1,204 @@
+@font-face {
+    src: url("../public/static/Nunito-Regular.ttf") format("truetype");
+    font-family: "Nunito";
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Whole Header Container */
+header{
+    max-width: 100%;
+    min-height:6rem;
+    background-color: #78C841;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+/* Logo Section */
+#logo {
+    flex: 0 1 auto;
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+}
+
+#logo i{
+    font-size: 2rem;
+    color: #78C841;
+}
+
+@media (max-width:350px){
+
+   header{
+        padding: 0.5rem !important;
+   }
+
+   #logo{
+        width: 20% !important;
+        padding: 0.5rem !important;
+        margin-left: 0.5rem !important;
+   }
+
+   #logo span {
+    font-size: 1rem;
+    }
+
+    #logo i {
+        font-size: 1rem;
+    }
+}
+
+#logo span{
+    font-size: 1.4rem;
+    color: #78C841;
+    padding-right: 0.5rem;
+}
+
+#logo span a{
+    text-decoration: none;
+}
+
+#logo span a:visited,#logo span a:active{
+    color: #78C841;
+}
+
+@media (max-width: 480px) {
+    #logo span {
+        font-size: 1rem;
+    }
+    #logo i {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Parent Div Contaning All Btns */
+#btns-username{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Statistic History Btns */
+.btns{
+    min-height: 2.8rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    border:1px solid white;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    color:#78C841;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .btns {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+.btns:hover{
+    border:0.5px solid #78C841;
+    opacity: 0.8; 
+}
+
+
+/* Login Signup Logout Btns */
+.auth-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color:#78C841;
+    margin: 0 0.5rem;
+    min-height: 3rem;
+    flex: 1 1 auto ;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .auth-btns {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0.25rem;
+    }
+}
+
+.auth-btns:hover{
+    border:1px solid #78C841;
+    opacity: 0.8;
+}
+
+#ham-menu-icon-show,#ham-menu-icon-hide{
+    display: none;
+    color: white;
+}
+
+@media (max-width:660px){
+
+    #ham-menu-icon-show{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    #ham-menu-icon-hide{
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    #ham-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btns-username{
+        display: none;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width:661px){
+    #ham-menu-icon-show,#ham-menu-icon-hide{
+        display: none !important;
+    }
+
+    #logo{
+        align-self: center !important;
+    }
+}
+
+.btn-username-mobile{
+    display: flex !important;
+}
+
+.logo-mobile{
+    align-self: self-start !important;
+}
