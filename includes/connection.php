@@ -1,10 +1,10 @@
 <?php
 
-   $host = "mysql-2c38a4ee-chaudhari-c6c0.e.aivencloud.com";
-    $port = 24942;
-    $user = "avnadmin";
-    $pass = "YOUR_PASSWORD";
-    $db   = "defaultdb";
+    $host = getenv('DB_HOST');
+    $port = getenv('DB_PORT');
+    $user = getenv('DB_USER');
+    $pass = getenv('DB_PASS');
+    $db   = getenv('DB_NAME');
 
     $conn = new mysqli($host, $user, $pass, $db, $port);
 
